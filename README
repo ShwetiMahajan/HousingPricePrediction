@@ -1,0 +1,20 @@
+The dataset used is a publicly available dataset Boston Housing DataSet. 
+Description about the files : 
+1. housetrain.data : The training Set.
+2. housetest.data : The testing set.
+3. housing.names : Description about the features.
+4. ridgells.m : This function takes three arguments, X, Y, lambda, and returns w and b. 
+                w and b are to be the ridge regression fit to the data represented by X 
+                and Y using regularization constant lambda. X is an m-by-n matrix, where 
+                m is the number of examples and n is the number of features. Y is an 
+                m-by-1 vector of the desired targets. And, lambda is a scalar. w is a 
+                n-by-1 vector of weights for the linear regressor and b is the 
+                corresponding scalar offset.
+ 5. llserr.m : This function computes the mean squared error. It returns a single scalar 
+               value (the average squared error) and takes four arguments: X, a data matrix 
+               of features, Y, a vector of target output, w a weight vector, and b an offset
+               (as in ridgells.m). Using w and b, it predicts from each row in X the target, 
+               compares to the actual target (in Y) and finds the squared error. It reports 
+               the average squared error over all such rows.
+ 6. plotacc.m : This function uses the ridgells and llserr functions. It plots a graph between 
+                mean squared error and lambda for both the testing and training sets. 
